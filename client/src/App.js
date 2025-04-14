@@ -59,19 +59,21 @@ function App() {
           </div>
         ))}
       </div>
-      <input
-        type="text"
-        placeholder="Type your message..."
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        style={{ padding: "10px", width: "70%" }}
-      />
-      <button
-        onClick={sendMessage}
-        style={{ padding: "10px", marginLeft: "10px" }}
-      >
-        Send
-      </button>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
+        <input
+          type="text"
+          placeholder="Type your message..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          style={{ padding: "10px", width: "100%"}}
+        />
+        <button
+          onClick={sendMessage}
+          style={{ padding: "10px", marginLeft: "10px" }}
+        >
+          Send
+        </button>
+      </div>
     </div>
   );
 }
