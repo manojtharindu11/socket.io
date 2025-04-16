@@ -59,13 +59,20 @@ function App() {
           </div>
         ))}
       </div>
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
+        }}
+      >
         <input
           type="text"
           placeholder="Type your message..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          style={{ padding: "10px", width: "100%"}}
+          style={{ padding: "10px", width: "100%" }}
         />
         <button
           onClick={sendMessage}
